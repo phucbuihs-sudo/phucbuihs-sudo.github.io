@@ -69,6 +69,12 @@
   }
   .btn:hover { background: var(--sign-dark); transform: translateY(-2px); }
   .btn svg { width: 22px; height: 22px; flex: none; }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 18px; }
+  .gmail-link {
+    display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 4px;
+    font-weight: 600; color: var(--sign); text-underline-offset: 3px;
+  }
+  .gmail-link svg { width: 18px; height: 18px; flex: none; }
 
   /* ===== Hero ===== */
   header.hero { padding: 40px 0 48px; position: relative; }
@@ -216,6 +222,7 @@
     h2 { font-size: 2rem; }
     header.hero { padding: 64px 0 56px; }
     .hero-inner { flex-direction: row; text-align: left; gap: 48px; }
+    .cta { justify-content: flex-start; }
     .portrait-frame { width: 256px; height: 256px; flex: none; }
     .portrait-frame img { width: 240px; height: 240px; }
     .hero h1 { font-size: 2.9rem; }
@@ -245,12 +252,16 @@
         <h1>Hoàng Phúc AI</h1>
         <p class="role">Chuyên viên quản lý dự án hạ tầng giao thông</p>
         <p class="intro" style="margin-top:16px">Mình chia sẻ cách dùng Excel và AI để làm khối lượng, hồ sơ, thanh toán nhanh hơn.</p>
-        <p style="margin-top:22px">
+        <div class="cta" style="margin-top:22px">
           <a class="btn" href="mailto:phucbuihs@gmail.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
             Gửi email hỏi mình
           </a>
-        </p>
+          <a class="gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=phucbuihs@gmail.com" target="_blank" rel="noopener">
+            Mở bằng Gmail
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="hero-road" aria-hidden="true"></div>
@@ -432,6 +443,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           Gửi email cho mình
         </a>
+        <p style="margin-top:10px"><a class="gmail-link" style="color:#fff" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=phucbuihs@gmail.com" target="_blank" rel="noopener">
+          Hoặc mở bằng Gmail
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+        </a></p>
         <p class="email"><a href="mailto:phucbuihs@gmail.com">phucbuihs@gmail.com</a></p>
       </div>
     </div>
